@@ -115,42 +115,41 @@ Contáctame:
   font-family: "Indie Flower";
 }
 
-body, * {
-  cursor: url('4.png'), auto !important;
-  margin-top: 20px;
+body  {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; 
+  cursor: url('4.png'), auto 
   
 }
 
 .container {
   position: relative;
-  display: flex;
-  flex-direction: column; 
+  width: 100%;
+  min-height: 100svh;
+  display: flex; 
   justify-content: center; 
-  align-items: center;  
-  padding-bottom: 0px;
-  overflow: visible;
+  align-items: center; 
 }
 
 svg#flower-frame{
   width: min(92vw, 420px);
-  height: 80vh;
+  height: auto;
   display: block;
-  position: relative;
-  z-index: 1;
-}
+ }
 
 .content{
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
-  width: 80%;
-  max-width: 320px;
-  gap: 12px;
+  width: 100%;
+  z-index: 10;
+  transform: translateY(18%);
 }
   
 #Footer_group_1_,
@@ -234,7 +233,9 @@ g[id^="BudGroup"] g[id^="BudGroup"] g[id^="Bud"],
   .boton {
     font-size: 0.85em;
     padding: 7px 11px;
-    width: 55%;
+    width: auto;
+    max-width: 220px;
+    margin-top: 35px;
   }
 }
 
